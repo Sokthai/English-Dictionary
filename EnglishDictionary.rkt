@@ -11,8 +11,8 @@
 ; --> append string -done
 ; --> print a string on the window.
 
-(require net/url)
-(require racket/gui)
+(require net/url net/sendurl)
+(require racket/gui (only-in srfi/13 string-constains) json)
 (define word-list (list "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten"))
 
 (define button_enabled #t)
@@ -90,6 +90,8 @@
 
 
 ;------------
+
+(define open_api "https://od-api.oxforddictionaries.com:443/api/v1/entries/en/")
 (define (search w)
 
   
@@ -155,6 +157,13 @@
          (show (cdr lst) k des)
          )))
 
+(define (playSound path)
+  (play-sound path #t)
+)
+
+(define (getSound url)
+  (send-url url)
+)
 
 
 
