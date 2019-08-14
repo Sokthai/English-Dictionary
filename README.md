@@ -1,7 +1,7 @@
 # English-Dictionary
 
 ### Statement
-We will try to create an app to help non-native English speakers to improve their language skills. We are both non-native speakers and we are trying to make some of the tricks that helped us learn English more convinient, using our cs knowledge. 
+We will create an app to help non-native English speakers to improve their language skills. We are both non-native speakers and we are trying to make some of the tricks that helped us learn English more convinient, using our cs knowledge. 
 
 ### Analysis
 
